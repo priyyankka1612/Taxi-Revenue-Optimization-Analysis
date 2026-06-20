@@ -1,105 +1,183 @@
-# Taxi-Revenue-Optimization-Analysis
-Taxi Revenue Optimization Analysis
+# 🚖 NYC Taxi Revenue Optimization Using Hypothesis Testing
 
-Project Overview
-This project analyzes NYC Taxi trip data to uncover business insights that can help maximize driver revenue and improve operational efficiency.
-The analysis focuses on customer payment behavior, trip characteristics, fare patterns, and statistical hypothesis testing to identify factors influencing taxi revenue.
+## 📌 Overview
 
-Business Problem
-Taxi companies aim to maximize revenue while maintaining a positive customer experience.
-This project investigates whether payment methods influence fare amounts and whether encouraging specific payment types can increase driver earnings.
+This project analyzes NYC Taxi Trip data to uncover customer payment behavior, revenue patterns, and operational insights that can help maximize driver earnings and improve business decision-making.
 
-Key business questions include:
-Do card users spend more than cash users?
-Which payment method generates higher revenue?
-How does passenger count impact fares?
-Are there significant differences in customer behavior based on payment type?
+Using Python, SQL, statistical analysis, and data visualization, the project investigates whether payment methods influence fare amounts and identifies opportunities to increase revenue through data-driven recommendations.
 
-Dataset
-Taxi Trip Records Dataset
-Relevant Features:
-passenger_count
-payment_type
-fare_amount
-trip_distance
-pickup_datetime
-dropoff_datetime
-trip_duration
-vendor_id
-Project Objectives
-Data Cleaning
-Removed invalid records
-Handled missing values
-Corrected data types
-Created trip duration feature
-Exploratory Data Analysis
-Payment Type Analysis
-Fare Distribution Analysis
-Passenger Count Analysis
-Trip Distance Analysis
-Statistical Analysis
+---
 
-Performed Independent T-Test:
-Null Hypothesis (H₀)
-There is no difference in average fare between customers paying by card and cash.
-Alternative Hypothesis (H₁)
-There is a significant difference in average fare between customers paying by card and cash.
+## 🎯 Problem Statement
+
+In the highly competitive taxi industry, maximizing driver revenue while maintaining customer convenience is essential.
+
+The business wanted to understand:
+
+* Do customers paying by card generate higher revenue than cash customers?
+* Is there a statistically significant relationship between payment type and fare amount?
+* What customer behaviors influence trip revenue?
+* How can taxi companies encourage payment methods that benefit drivers?
+* What operational insights can be derived from trip distance, passenger count, and payment preferences?
+
+This analysis provides actionable insights to support strategic business decisions and revenue optimization.
+
+---
+
+## 🔍 Key Analyses
+
+### 1. Payment Type Analysis
+
+* Compared customer usage of Credit Card and Cash payments.
+* Identified the most preferred payment method.
+* Analyzed payment behavior patterns and customer preferences.
+
+### 2. Fare Amount Comparison
+
+* Evaluated average fare amounts across payment methods.
+* Determined whether card users spend more than cash users.
+* Measured revenue impact on drivers.
+
+### 3. Trip Distance Analysis
+
+* Compared trip distances between card and cash customers.
+* Investigated the relationship between trip length and fare amount.
+* Identified revenue-generating travel patterns.
+
+### 4. Passenger Count Analysis
+
+* Examined customer travel behavior based on passenger count.
+* Identified the most common passenger group size.
+* Evaluated payment preferences across different passenger categories.
+
+### 5. Statistical Hypothesis Testing
+
+* Conducted Independent T-Test to determine whether payment methods significantly affect fare amounts.
+
+#### Null Hypothesis (H₀)
+
+There is no significant difference in average fare amount between card and cash payments.
+
+#### Alternative Hypothesis (H₁)
+
+There is a significant difference in average fare amount between card and cash payments.
+
+### 6. Revenue Optimization Insights
+
+* Identified opportunities to increase driver earnings.
+* Evaluated customer payment preferences.
+* Developed business recommendations for payment adoption strategies.
+
+---
+
+## 📊 Key Findings
+
+### 💳 Payment Preference Distribution
+
+* Card Payments: 67.5%
+* Cash Payments: 32.5%
+
+Customers strongly prefer card payments over cash transactions.
+
+### 💰 Average Fare Comparison
+
+| Payment Type | Average Fare |
+| ------------ | ------------ |
+| Card         | $13.70       |
+| Cash         | $12.25       |
+
+Card-paying customers generate higher average revenue.
+
+### 🛣 Trip Distance Analysis
+
+| Payment Type | Average Distance |
+| ------------ | ---------------- |
+| Card         | 3.23 Miles       |
+| Cash         | 2.80 Miles       |
+
+Card users tend to take longer trips compared to cash users.
+
+### 📈 Hypothesis Testing Result
+
+* T-Statistic: 165.5
+* P-Value: < 0.05
 
 Result:
-T-statistic = 165.5
-P-value < 0.05
 
-Conclusion:
-Reject the null hypothesis.
-There is a statistically significant difference in fare amount between card and cash users.
+* Reject the Null Hypothesis.
+* There is a statistically significant difference between fare amounts for card and cash customers.
 
-Key Findings
+---
 
-Payment         Preferences
-Card Payments:    67.5%
-Cash Payments:    32.5%
-Customers strongly prefer card payments.
+## 📋 Business Recommendations
 
-Average Fare
-Payment Type	Average Fare
-Card          	13.7
-Cash	          12.25
-Card users generate higher revenue.
+### ✅ Encourage Card Payments
 
-Trip Distance
-Payment Type	Average Distance
-Card	          3.23 Miles
-Cash	          2.80 Miles
-Card users generally take longer trips.
+* Offer incentives and discounts for card transactions.
+* Promote digital payment adoption.
 
-Business Recommendations
-Encourage card payments through incentives.
-Improve digital payment experience.
-Provide promotional offers for card transactions.
-Educate drivers on revenue benefits of digital payments.
+### ✅ Improve Payment Experience
 
-These recommendations can help increase driver earnings and overall business revenue.
+* Provide seamless and secure card payment options.
+* Reduce payment friction for customers.
 
-Tools & Technologies
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-SciPy
-Jupyter Notebook
-SQL
+### ✅ Revenue Growth Strategy
 
-Project Deliverables
-Data Cleaning Notebook
-Statistical Analysis
-Visualizations
-Business Insights
-Executive Presentation
-Final Report
+* Encourage customers to use card payments during longer trips.
+* Leverage customer payment behavior to maximize driver earnings.
 
-Future Improvements
-Predictive Revenue Modeling
-Customer Segmentation
-Driver Performance Analysis
-Dynamic Pricing Strategy
+### ✅ Data-Driven Decision Making
+
+* Continuously monitor customer payment trends.
+* Use analytics to identify future revenue opportunities.
+
+---
+
+## 🛠 Tech Stack
+
+### Programming & Analysis
+
+* Python
+* SQL
+* Jupyter Notebook
+
+### Libraries
+
+* Pandas
+* NumPy
+* SciPy
+* Matplotlib
+* Seaborn
+
+### Statistical Methods
+
+* Hypothesis Testing
+* Independent T-Test
+* Descriptive Statistics
+
+### Data Visualization
+
+* Bar Charts
+* Pie Charts
+* Distribution Analysis
+* Comparative Analysis
+
+---
+
+## 📂 Project Deliverables
+
+* Data Cleaning & Transformation
+* Exploratory Data Analysis (EDA)
+* Statistical Hypothesis Testing
+* Business Insights & Recommendations
+* Executive Business Report
+* Data Visualizations
+* Jupyter Notebook Implementation
+
+---
+
+## 📈 Business Impact
+
+This project demonstrates how statistical analysis and data-driven decision-making can be used to identify revenue opportunities within transportation services.
+
+The findings show that card-paying customers generate higher average fare amounts, providing actionable recommendations that can help taxi companies increase driver earnings and improve overall business performance.
